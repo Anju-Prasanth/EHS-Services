@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="public-sans.regular.ttf">
+            <string>PublicSans-Regular</string>
+        </array>
+        <array key="public-sans.semibold.ttf">
+            <string>PublicSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PromoCollectionViewCell" id="gTV-IL-0wX" customClass="PromoCollectionViewCell" customModule="Express_Home" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3B-sC-zQU" customClass="DashedView" customModule="Express_Home" customModuleProvider="target">
+                        <rect key="frame" x="2" y="0.0" width="154" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALE50" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eb-kc-jI7">
+                                <rect key="frame" x="20" y="14.5" width="92" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="V1D-Kt-d0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-SemiBold" family="Public Sans" pointSize="22"/>
+                                <color key="textColor" red="0.2117646933" green="0.2941176593" blue="0.78039217000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Promocode applied)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FC-w6-Zcy">
+                                <rect key="frame" x="122" y="14.5" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="eP9-gi-qBj"/>
+                                    <constraint firstAttribute="height" constant="21" id="jwh-wU-Zfb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-Regular" family="Public Sans" pointSize="20"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.20784313725490194" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mc-3x-pOa">
+                                <rect key="frame" x="147" y="6" width="0.0" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="7Vo-St-6ip"/>
+                                    <constraint firstAttribute="height" constant="40" id="vTr-4Y-fRX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="deleteWithoutbackground"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509804249999996" green="0.94901961089999998" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4FC-w6-Zcy" firstAttribute="leading" secondItem="9eb-kc-jI7" secondAttribute="trailing" constant="10" id="Xkr-jj-wPu"/>
+                            <constraint firstAttribute="trailing" secondItem="7mc-3x-pOa" secondAttribute="trailing" constant="7" id="YaI-Mz-j7J"/>
+                            <constraint firstItem="7mc-3x-pOa" firstAttribute="centerY" secondItem="4FC-w6-Zcy" secondAttribute="centerY" constant="1" id="exc-E5-4Cc"/>
+                            <constraint firstItem="9eb-kc-jI7" firstAttribute="leading" secondItem="a3B-sC-zQU" secondAttribute="leading" constant="20" id="nDd-5Z-jH2"/>
+                            <constraint firstItem="9eb-kc-jI7" firstAttribute="centerY" secondItem="a3B-sC-zQU" secondAttribute="centerY" id="sCQ-tL-4iM"/>
+                            <constraint firstItem="4FC-w6-Zcy" firstAttribute="centerY" secondItem="9eb-kc-jI7" secondAttribute="centerY" id="sVb-wR-cdV"/>
+                            <constraint firstItem="7mc-3x-pOa" firstAttribute="leading" secondItem="4FC-w6-Zcy" secondAttribute="trailing" constant="25" id="u0v-AA-9RH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.92941176889999999" green="0.93725490570000003" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="a3B-sC-zQU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="7yl-TT-V1c"/>
+                <constraint firstAttribute="trailing" secondItem="a3B-sC-zQU" secondAttribute="trailing" constant="2" id="Rfv-eO-YZo"/>
+                <constraint firstAttribute="bottom" secondItem="a3B-sC-zQU" secondAttribute="bottom" constant="2" id="b7O-DK-xzg"/>
+                <constraint firstItem="a3B-sC-zQU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yue-kj-FBh"/>
+            </constraints>
+            <size key="customSize" width="158" height="52"/>
+            <connections>
+                <outlet property="dashedView" destination="a3B-sC-zQU" id="Taf-dN-MdQ"/>
+                <outlet property="deleteBtn" destination="7mc-3x-pOa" id="mKv-zJ-YPV"/>
+                <outlet property="deleteBtnwidthConstraint" destination="7Vo-St-6ip" id="Sgk-pJ-Q4h"/>
+                <outlet property="promocodeLNbl" destination="9eb-kc-jI7" id="xhQ-DG-lCh"/>
+                <outlet property="promocodeappliedWidthconstraint" destination="eP9-gi-qBj" id="XcO-hE-xfr"/>
+            </connections>
+            <point key="canvasLocation" x="215.94202898550725" y="50.223214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="deleteWithoutbackground" width="34" height="34"/>
+    </resources>
+</document>

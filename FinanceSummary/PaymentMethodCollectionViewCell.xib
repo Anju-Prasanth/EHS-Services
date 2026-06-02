@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="public-sans.regular.ttf">
+            <string>PublicSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PaymentMethodCollectionViewCell" id="gTV-IL-0wX" customClass="PaymentMethodCollectionViewCell" customModule="EHS_Sales" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCustomerUntick" translatesAutoresizingMaskIntoConstraints="NO" id="YCo-Km-Jer">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="525-r0-wA0"/>
+                            <constraint firstAttribute="height" constant="40" id="BK4-Gy-UVD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-Cl-6yK">
+                        <rect key="frame" x="50" y="6.5" width="293" height="27"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.9529411793" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="KzE-Fn-vmB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PublicSans-Regular" family="Public Sans" pointSize="24"/>
+                        <color key="textColor" red="0.20000001789999999" green="0.20784312490000001" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-Ap-eLL">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Pcm-wa-zfp"/>
+                            <constraint firstAttribute="height" constant="36" id="YIe-yE-FXH"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.94901961089999998" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="XO7-Cl-6yK" firstAttribute="centerY" secondItem="YCo-Km-Jer" secondAttribute="centerY" id="R1c-Bn-tHa"/>
+                <constraint firstItem="lxu-Ap-eLL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SIe-0f-TQv"/>
+                <constraint firstItem="YCo-Km-Jer" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VNQ-st-Ha3"/>
+                <constraint firstItem="XO7-Cl-6yK" firstAttribute="leading" secondItem="YCo-Km-Jer" secondAttribute="trailing" constant="10" id="Xff-iG-MgL"/>
+                <constraint firstItem="YCo-Km-Jer" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b6C-df-wYQ"/>
+                <constraint firstAttribute="trailing" secondItem="XO7-Cl-6yK" secondAttribute="trailing" constant="20" id="dMb-rd-ibM"/>
+                <constraint firstItem="lxu-Ap-eLL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m89-rt-PFJ"/>
+            </constraints>
+            <size key="customSize" width="363" height="50"/>
+            <connections>
+                <outlet property="paymentMethodLbl" destination="XO7-Cl-6yK" id="pcm-g2-SGC"/>
+                <outlet property="selectionImageView" destination="YCo-Km-Jer" id="gQg-sx-epu"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="95.758928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addCustomerUntick" width="28" height="28"/>
+    </resources>
+</document>

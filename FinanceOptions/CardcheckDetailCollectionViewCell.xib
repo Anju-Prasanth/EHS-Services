@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="public-sans.medium.ttf">
+            <string>PublicSans-Medium</string>
+        </array>
+        <array key="public-sans.semibold.ttf">
+            <string>PublicSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardcheckDetailCollectionViewCell" id="6d5-cR-4iD" customClass="CardcheckDetailCollectionViewCell" customModule="Express_Home" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="501" height="94"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-Li-mZ3">
+                        <rect key="frame" x="0.0" y="10" width="490" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOm-T6-huE">
+                                <rect key="frame" x="15" y="10" width="129.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WPB-Nd-sEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-Medium" family="Public Sans" pointSize="24"/>
+                                <color key="textColor" red="0.2117646933" green="0.2941176593" blue="0.78039217000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzj-g6-45n">
+                                <rect key="frame" x="15" y="43" width="0.0" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Y7b-4Y-Wj3"/>
+                                    <constraint firstAttribute="width" id="ZZN-ZT-apV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-Medium" family="Public Sans" pointSize="24"/>
+                                <color key="textColor" red="0.47450977560000002" green="0.48235297199999999" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpa-yd-QNT">
+                                <rect key="frame" x="20" y="44" width="137" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="1S9-2F-BTA"/>
+                                    <constraint firstAttribute="height" constant="26" id="XpK-my-qbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-SemiBold" family="Public Sans" pointSize="24"/>
+                                <color key="textColor" red="0.20392158630000001" green="0.20784312490000001" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juZ-Zt-K9p">
+                                <rect key="frame" x="408" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="83o-12-bv3"/>
+                                    <constraint firstAttribute="width" constant="50" id="MlA-TX-zIQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-cq-s9q">
+                                <rect key="frame" x="478" y="20" width="0.0" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HcM-W6-Bcw"/>
+                                    <constraint firstAttribute="width" id="wwj-da-QfT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="edit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="953680026834" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-Wb-KKQ">
+                                <rect key="frame" x="149.5" y="13" width="162" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="HMb-Bb-89n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="162" id="hMy-d0-GYK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-Medium" family="Public Sans" pointSize="20"/>
+                                <color key="textColor" red="0.34901960784313724" green="0.3529411764705882" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyV-Z5-XMf">
+                                <rect key="frame" x="15" y="50" width="20" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="2Y0-Yd-3qA"/>
+                                    <constraint firstAttribute="width" constant="20" id="skK-jE-t0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-Medium" family="Public Sans" pointSize="24"/>
+                                <color key="textColor" red="0.47450980392156861" green="0.4823529411764706" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-QR-gC5">
+                                <rect key="frame" x="40" y="50" width="290" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="4YO-pt-vKn"/>
+                                    <constraint firstAttribute="height" constant="26" id="yY9-YG-NS0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PublicSans-SemiBold" family="Public Sans" pointSize="22"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.20784313725490194" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745289999996" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aDt-cq-s9q" secondAttribute="trailing" constant="12" id="2wx-WI-fXD"/>
+                            <constraint firstItem="VOm-T6-huE" firstAttribute="leading" secondItem="pRE-Li-mZ3" secondAttribute="leading" constant="15" id="4Ae-oi-wQ1"/>
+                            <constraint firstItem="Bpa-yd-QNT" firstAttribute="leading" secondItem="Nzj-g6-45n" secondAttribute="trailing" constant="5" id="ApE-nP-Kaz"/>
+                            <constraint firstItem="Bpa-yd-QNT" firstAttribute="top" secondItem="VOm-T6-huE" secondAttribute="bottom" constant="4" id="FIB-3z-ZhD"/>
+                            <constraint firstItem="z5T-QR-gC5" firstAttribute="top" secondItem="VOm-T6-huE" secondAttribute="bottom" constant="10" id="IY6-Z3-qfZ"/>
+                            <constraint firstItem="Nzj-g6-45n" firstAttribute="leading" secondItem="pRE-Li-mZ3" secondAttribute="leading" constant="15" id="KAN-fY-DGF"/>
+                            <constraint firstItem="aDt-cq-s9q" firstAttribute="top" secondItem="pRE-Li-mZ3" secondAttribute="top" constant="20" id="Kwh-ap-K4z"/>
+                            <constraint firstItem="p0S-Wb-KKQ" firstAttribute="leading" secondItem="VOm-T6-huE" secondAttribute="trailing" constant="5" id="OLA-oj-XPV"/>
+                            <constraint firstItem="CyV-Z5-XMf" firstAttribute="leading" secondItem="pRE-Li-mZ3" secondAttribute="leading" constant="15" id="SVZ-Jr-S49"/>
+                            <constraint firstItem="VOm-T6-huE" firstAttribute="top" secondItem="pRE-Li-mZ3" secondAttribute="top" constant="10" id="ZW8-A8-X8k"/>
+                            <constraint firstItem="Nzj-g6-45n" firstAttribute="top" secondItem="VOm-T6-huE" secondAttribute="bottom" constant="3" id="dL9-NM-U62"/>
+                            <constraint firstItem="juZ-Zt-K9p" firstAttribute="top" secondItem="pRE-Li-mZ3" secondAttribute="top" constant="20" id="fSl-YT-NGJ"/>
+                            <constraint firstItem="z5T-QR-gC5" firstAttribute="leading" secondItem="CyV-Z5-XMf" secondAttribute="trailing" constant="5" id="qNv-V0-Rwy"/>
+                            <constraint firstItem="CyV-Z5-XMf" firstAttribute="top" secondItem="VOm-T6-huE" secondAttribute="bottom" constant="10" id="tFV-M5-LlP"/>
+                            <constraint firstItem="aDt-cq-s9q" firstAttribute="leading" secondItem="juZ-Zt-K9p" secondAttribute="trailing" constant="20" id="tnV-lX-XEq"/>
+                            <constraint firstItem="p0S-Wb-KKQ" firstAttribute="top" secondItem="pRE-Li-mZ3" secondAttribute="top" constant="13" id="yNg-A9-Ff8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.79215681550000006" green="0.80000001190000003" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hxA-hK-7M9"/>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pRE-Li-mZ3" secondAttribute="trailing" constant="11" id="3h9-uY-FT1"/>
+                <constraint firstItem="pRE-Li-mZ3" firstAttribute="top" secondItem="6d5-cR-4iD" secondAttribute="top" constant="10" id="QM2-Pr-GG7"/>
+                <constraint firstAttribute="bottom" secondItem="pRE-Li-mZ3" secondAttribute="bottom" constant="10" id="gW5-0F-Z31"/>
+                <constraint firstItem="pRE-Li-mZ3" firstAttribute="leading" secondItem="6d5-cR-4iD" secondAttribute="leading" id="jpy-AX-hC3"/>
+            </constraints>
+            <size key="customSize" width="501" height="97"/>
+            <connections>
+                <outlet property="cardCheckAmountLbl" destination="z5T-QR-gC5" id="tVl-3t-8QF"/>
+                <outlet property="cardcheckNumberLbl" destination="p0S-Wb-KKQ" id="Crd-jb-LWI"/>
+                <outlet property="cardtypeLbl" destination="VOm-T6-huE" id="d7N-Ed-sNG"/>
+                <outlet property="deleteBtn" destination="juZ-Zt-K9p" id="Mq4-Lf-QQP"/>
+                <outlet property="editBtn" destination="aDt-cq-s9q" id="bbG-Jr-a0X"/>
+                <outlet property="editbtnWidthconstant" destination="wwj-da-QfT" id="tbh-0E-Qjy"/>
+            </connections>
+            <point key="canvasLocation" x="399.8780487804878" y="110.84745762711864"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="38" height="38"/>
+        <image name="edit" width="38" height="38"/>
+    </resources>
+</document>
